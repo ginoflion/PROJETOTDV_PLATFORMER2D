@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/young/Documents/GitHub/2DPlatformer/2DPlatformer/2DPlatformer/Content/Sound Effects/jump01.wav</SourceFile>
+  <SourceTime>2019-10-31T17:50:04.0834938+01:00</SourceTime>
+  <DestFile>C:/Users/young/Documents/GitHub/2DPlatformer/2DPlatformer/2DPlatformer/Content/bin/DesktopGL/Sound Effects/jump01.xnb</DestFile>
+  <DestTime>2023-05-01T12:59:02.4327641+02:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2020-08-10T18:17:54+02:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2020-08-10T18:17:54+02:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
