@@ -1,5 +1,4 @@
 # PROJETOTDV_PLATFORMER2D
-
 # 2D Platformer
 
 Este projeto é sobre um jogo 2D Platformer desenvolvido em monogame e em C#
@@ -1382,73 +1381,83 @@ public class Animation
             spriteBatch.Draw(texture, position, sourceRectangles[frame], Color.White, 0, Vector2.Zero, Vector2.One, s, 1); // Ritar enbart ut aktiva framen (sourceRectangles[frame])
         }
 
-    }
-    ```
+    }   
+
+```
 
 A animação tem as propriedades `texture`, uma lista de quadrados que representa os quadrados da spritesheet, frames, que nos indica a quantidade de quadrados da spritesheet, frame, que representa o frame que está a ser utilizado, `frameTime`, que nos indica por quanto tempo cada frame deve ser mostrado, e `frameTimeLeft`, que vai contar o tempo até a mudança de frame.
 
 O construtor da animação recebe a textura, o tempo que cada frame deve ficar no ecrã e a quantidade de frames na animação.
 
-A função `Update()` conta o tempo necessário antes de passar para o próximo frame e, quando o tempo chega ao fim avança para o frame a seguir. 
+A função `Update()` conta o tempo necessário antes de passar para o próximo frame e, quando o tempo chega ao fim avança para o frame a seguir.
+
+A função `Draw()` vai desenhar apenas o frame da animação desejado.
+A animação tem as propriedades `texture`, uma lista de quadrados que representa os quadrados da spritesheet, frames, que nos indica a quantidade de quadrados da spritesheet, frame, que representa o frame que está a ser utilizado, `frameTime`, que nos indica por quanto tempo cada frame deve ser mostrado, e `frameTimeLeft`, que vai contar o tempo até a mudança de frame.
+
+O construtor da animação recebe a textura, o tempo que cada frame deve ficar no ecrã e a quantidade de frames na animação.
+
+A função `Update()` conta o tempo necessário antes de passar para o próximo frame e, quando o tempo chega ao fim avança para o frame a seguir.
 
 A função `Draw()` vai desenhar apenas o frame da animação desejado.
 
-------
+---
 
 ### Button:
 
 Esta classe tem como objetivo a criação de um botão para o menu, o qual vai ser possível interagir com o rato.
 
 ```cs
-      public class Button
+ public class Button
+ {
+ Texture2D texture;
+ Vector2 position;
+ Rectangle rectangle;
+ SpriteFont font;
+ MouseState lastMouseState, mouseState;
+ public bool clicked = false;
+ public string text;
+```
+
+    Color background_color = Color.White;
+    Color text_color = Color.Black;
+    
+    public Button(Texture2D newTexture, Vector2 newPosition, SpriteFont newFont, string newText)
     {
-        Texture2D texture;
-        Vector2 position;
-        Rectangle rectangle;
-        SpriteFont font;
-        MouseState lastMouseState, mouseState;
-        public bool clicked = false;
-        public string text;
-
-        Color background_color = Color.White;
-        Color text_color = Color.Black;
-
-        public Button(Texture2D newTexture, Vector2 newPosition, SpriteFont newFont, string newText)
-        {
-            texture = newTexture;
-            position = newPosition;
-            rectangle = new Rectangle((int)position.X, (int)position.Y, (int)texture.Width, (int)texture.Height);
-            font = newFont;
-            text = newText;
-        }
-
-        public void Update()
-        {
-            mouseState = Mouse.GetState();
-            Rectangle cursor = new Rectangle(mouseState.X, mouseState.Y, 10, 10); // Rektangel för muspekaren
-            if (cursor.Intersects(rectangle))
-            {
-                background_color = Color.DarkGray;
-                text_color = Color.White;
-                if (mouseState.LeftButton == ButtonState.Pressed && lastMouseState.LeftButton == ButtonState.Released) // Om man klickar
-                {
-                    clicked = true; // När clicked är true hanteras händelser i klassen där knappen finns
-                }
-            }
-            else
-            {
-                background_color = Color.White;
-                text_color = Color.Black;
-            }
-            lastMouseState = mouseState;
-        }
-
-        public void Draw(SpriteBatch spriteBatch)
-        {
-            spriteBatch.Draw(texture, position, background_color);
-            spriteBatch.DrawString(font, text, new Vector2(position.X + 100, position.Y + 15), text_color);
-        }
+        texture = newTexture;
+        position = newPosition;
+        rectangle = new Rectangle((int)position.X, (int)position.Y, (int)texture.Width, (int)texture.Height);
+        font = newFont;
+        text = newText;
     }
+    
+    public void Update()
+    {
+        mouseState = Mouse.GetState();
+        Rectangle cursor = new Rectangle(mouseState.X, mouseState.Y, 10, 10); // Rektangel för muspekaren
+        if (cursor.Intersects(rectangle))
+        {
+            background_color = Color.DarkGray;
+            text_color = Color.White;
+            if (mouseState.LeftButton == ButtonState.Pressed && lastMouseState.LeftButton == ButtonState.Released) // Om man klickar
+            {
+                clicked = true; // När clicked är true hanteras händelser i klassen där knappen finns
+            }
+        }
+        else
+        {
+            background_color = Color.White;
+            text_color = Color.Black;
+        }
+        lastMouseState = mouseState;
+    }
+    
+    public void Draw(SpriteBatch spriteBatch)
+    {
+        spriteBatch.Draw(texture, position, background_color);
+        spriteBatch.DrawString(font, text, new Vector2(position.X + 100, position.Y + 15), text_color);
+    }
+
+}
 ```
 
 A classe `Button` tem como propriedades a sua textura, a sua posição, um retângulo que representa o espaço ocupado pelo botão, o tipo de letra utilizado pelo botão, o estado do rato, e por fim um boleano que diz se o botão foi pressionado ou não.
