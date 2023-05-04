@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "nWYzrwJSXepWTD7EWiVvdOHiWOfL9o5ilUYE6XlbkkeoaxBIM50PIXtt/H7rp6OAN/2lTtR/GF3T+KicA4M53w==",
+  "dgSpecHash": "qpvqtNdDUKrPYhGI+/Y+wgLXatzjtccmePsY8k062u7V+rkwDh8gquiJoVF1FAzkQgsY6M2yN2XI+f72+ZuzLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\young\\Documents\\GitHub\\2DPlatformer\\2DPlatformer\\2DPlatformer\\2DPlatformer.csproj",
+  "projectFilePath": "C:\\Users\\gonca\\Desktop\\PROJETOTDV_PLATFORMER2D\\2DPlatformer\\2DPlatformer\\2DPlatformer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\young\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
-    "C:\\Users\\young\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+    "C:\\Users\\gonca\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\gonca\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
   ],
   "logs": []
 }

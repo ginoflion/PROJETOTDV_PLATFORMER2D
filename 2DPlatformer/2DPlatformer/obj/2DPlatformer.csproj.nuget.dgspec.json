@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\young\\Documents\\GitHub\\2DPlatformer\\2DPlatformer\\2DPlatformer\\2DPlatformer.csproj": {}
+    "C:\\Users\\gonca\\Desktop\\PROJETOTDV_PLATFORMER2D\\2DPlatformer\\2DPlatformer\\2DPlatformer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\young\\Documents\\GitHub\\2DPlatformer\\2DPlatformer\\2DPlatformer\\2DPlatformer.csproj": {
+    "C:\\Users\\gonca\\Desktop\\PROJETOTDV_PLATFORMER2D\\2DPlatformer\\2DPlatformer\\2DPlatformer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\young\\Documents\\GitHub\\2DPlatformer\\2DPlatformer\\2DPlatformer\\2DPlatformer.csproj",
+        "projectUniqueName": "C:\\Users\\gonca\\Desktop\\PROJETOTDV_PLATFORMER2D\\2DPlatformer\\2DPlatformer\\2DPlatformer.csproj",
         "projectName": "2DPlatformer",
-        "projectPath": "C:\\Users\\young\\Documents\\GitHub\\2DPlatformer\\2DPlatformer\\2DPlatformer\\2DPlatformer.csproj",
-        "packagesPath": "C:\\Users\\young\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\young\\Documents\\GitHub\\2DPlatformer\\2DPlatformer\\2DPlatformer\\obj\\",
+        "projectPath": "C:\\Users\\gonca\\Desktop\\PROJETOTDV_PLATFORMER2D\\2DPlatformer\\2DPlatformer\\2DPlatformer.csproj",
+        "packagesPath": "C:\\Users\\gonca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gonca\\Desktop\\PROJETOTDV_PLATFORMER2D\\2DPlatformer\\2DPlatformer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\young\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gonca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
